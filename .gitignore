@@ -1,9 +1,9 @@
 ##ignore this file##
 /target/
 
-.class
-.classpath
-.project
+*.class
+*.classpath
+*.project
 .settings     
  ##filter databfile、sln file##
 *.mdb  
