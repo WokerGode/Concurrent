@@ -37,6 +37,17 @@
 Icon?  
 ehthumbs.db  
 Thumbs.db  
+# Maven
+target/
+*.ser
+*.ec
+ 
+# IntelliJ Idea
+.idea/
+out/
+*.ipr
+*.iws
+*.iml
 /springIoc/.idea/workspace.xml
 /concurrent/.idea/compiler.xml
 /concurrent/.idea/dictionaries/Woker.xml
