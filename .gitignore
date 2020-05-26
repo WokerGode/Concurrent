@@ -65,3 +65,10 @@ springIoc/target/classes/com/ygc/dao/IndexDao.class
 springIoc/target/classes/com/ygc/dao/IndexService.class
 springIoc/target/classes/com/ygc/dao/Spring.class
 springIoc/target/classes/com/ygc/dao/Test.class
+springIoc/springIoc.iml
+springIoc/target/classes/com/ygc/dao/IdexDaoImpl.class
+springIoc/target/classes/com/ygc/dao/IndexDao.class
+springIoc/target/classes/com/ygc/dao/IndexService.class
+springIoc/target/classes/com/ygc/dao/Spring.class
+springIoc/target/classes/com/ygc/dao/Test.class
+springIoc/target/classes/spring.xml
