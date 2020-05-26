@@ -58,3 +58,10 @@ out/
 /concurrent/.idea/vcs.xml
 /concurrent/.idea/workspace.xml
 /concurrent/target/classes/META-INF/concurrent.kotlin_module
+
+springIoc/springIoc.iml
+springIoc/target/classes/com/ygc/dao/IdexDaoImpl.class
+springIoc/target/classes/com/ygc/dao/IndexDao.class
+springIoc/target/classes/com/ygc/dao/IndexService.class
+springIoc/target/classes/com/ygc/dao/Spring.class
+springIoc/target/classes/com/ygc/dao/Test.class
