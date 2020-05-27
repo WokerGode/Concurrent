@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
  * @Author: yanguochen
  * @Description:
  * @Date: Created in 22:41 2020/5/24
- * @Modified By:xxxxxx
+ * @Modified By:xx
  */
 @Repository("dao")  //dao即自己对bean的重命名,自动生成为indexDaoImpl
 public class IdexDaoImpl1 implements IndexDao {
