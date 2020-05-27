@@ -1,7 +1,10 @@
 package com.ygc.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @Author: yanguochen
@@ -11,18 +14,17 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class IndexService {
-    public IndexService(IndexDao dao) {
-        this.dao = dao;
-    }
-
-    @Autowired
-    private IndexDao dao;
+//    xml byName注入是根据set方法后跟的名称.resource无name属性注入的byname是根据成员变量名称
+//    @Autowired  默认采用的是"byType"方式注入
+//    @Resource  默认采用的是"byType"方式注入,不指定name属性时,会通过成员变量name和set方法实现注入
+    @Resource(name = "dao")   //去掉name属性,成员变量名生效
+    private IndexDao idexDaoImpl;
 
     public void service() {
-        dao.test();
+        idexDaoImpl.test();
     }
 
-//    public void setDao(IndexDao dao) {
-//        this.dao = dao;
-//    }
+    public void setIdexDaoImpl(IndexDao dao) {
+        this.idexDaoImpl = dao;
+    }
 }

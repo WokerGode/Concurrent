@@ -1,6 +1,5 @@
 package com.ygc.dao;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,8 +8,8 @@ import org.springframework.stereotype.Repository;
  * @Date: Created in 22:41 2020/5/24
  * @Modified By:
  */
-@Repository
-public class IdexDaoImpl implements IndexDao {
+@Repository("dao")  //dao即自己对bean的重命名,自动生成为indexDaoImpl
+public class IdexDaoImpl1 implements IndexDao {
 
     private String str;
 
@@ -20,7 +19,7 @@ public class IdexDaoImpl implements IndexDao {
 
     @Override
     public void test() {
-        System.out.println("impl0");
+        System.out.println("impl1");
         System.out.println(str);
     }
 }

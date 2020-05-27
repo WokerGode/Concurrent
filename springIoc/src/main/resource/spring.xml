@@ -7,9 +7,11 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--下面的注入方式可以指定整个spring注入方式-->
+        <!--default-autowire="byName"-->
 
 <!--    <context:annotation-config></context:annotation-config>-->
-    <context:component-scan base-package="com"></context:component-scan>
+    <!--<context:component-scan base-package="com"></context:component-scan>-->
 <!--        xml方式构建-->
 <!--    <bean id="dao" class="com.ygc.dao.IdexDaoImpl" p:str="xxx">-->
 <!--&lt;!&ndash;        <property name="str" value="XXX"></property>&ndash;&gt;-->
@@ -22,7 +24,11 @@
         <constructor-arg ref="dao"></constructor-arg>
         &ndash;&gt;
     </bean>-->
-
+    <bean id="dao" class="com.ygc.dao.IdexDaoImpl"></bean>
+    <bean id="dao1" class="com.ygc.dao.IdexDaoImpl1"></bean>
+    <!--autowire对每个bean单独指定注入方式-->
+    <!--lazy-init对每个bean单独指定spring懒加载方式-->
+    <bean id="indexService" class="com.ygc.dao.IndexService" autowire="byName" lazy-init="true"></bean>
 
 
 </beans>
